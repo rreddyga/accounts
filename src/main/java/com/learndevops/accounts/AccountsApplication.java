@@ -10,28 +10,28 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-/*@ComponentScans({ @ComponentScan("com.eazybytes.accounts.controller") })
-@EnableJpaRepositories("com.eazybytes.accounts.repository")
-@EntityScan("com.eazybytes.accounts.model")*/
+/*@ComponentScans({ @ComponentScan("com.learndevops.accounts.controller") })
+@EnableJpaRepositories("com.learndevops.accounts.repository")
+@EntityScan("com.learndevops.accounts.model")*/
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @OpenAPIDefinition(
 		info = @Info(
 				title = "Accounts microservice REST API Documentation",
-				description = "EazyBank Accounts microservice REST API Documentation",
+				description = "Accounts microservice REST API Documentation",
 				version = "v1",
 				contact = @Contact(
 						name = "Madan Reddy",
-						email = "tutor@eazybytes.com",
-						url = "https://www.eazybytes.com"
+						email = "tutor@learndevops.com",
+						url = "https://www.learndevops.com"
 				),
 				license = @License(
 						name = "Apache 2.0",
-						url = "https://www.eazybytes.com"
+						url = "https://www.learndevops.com"
 				)
 		),
 		externalDocs = @ExternalDocumentation(
-				description =  "EazyBank Accounts microservice REST API Documentation",
-				url = "https://www.eazybytes.com/swagger-ui.html"
+				description =  "Accounts microservice REST API Documentation",
+				url = "https://www.learndevops.com/swagger-ui.html"
 		)
 )
 public class AccountsApplication {
